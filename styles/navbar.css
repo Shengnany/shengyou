@@ -1,0 +1,106 @@
+.nav-container {
+  border: 1px solid transparent;
+  padding: 20px;
+  background-color: #dad;
+  color: #111;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #111;
+}
+
+.logo {
+  font-size: 62px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 40px;
+}
+
+.menu li {
+  padding: 15px 34px;
+  border-radius: 17px;
+}
+
+.menu li a:hover {
+  background-color: rgba(122, 15, 113, 0.466);
+  transition: 0.5s ease;
+}
+
+.menu li a.active {
+  background-color: #9b11db41;
+  padding: 15px 34px;
+  border-radius: 17px;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 10px;
+}
+
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 1080px) {
+
+  .menu {
+    display: none;
+    position: fixed;
+    background-color: rgb(240, 208, 232);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger{
+    display: block;
+    font-size: 80px;
+    margin-right: 20px;
+  }
+
+  .menu li {
+    display: block;
+    font-size: 40px;
+    padding: 15px 34px;
+    border-radius: 17px;
+  }
+
+
+ .menu li a:hover {
+    background-color: rgba(122, 15, 113, 0.466);
+    transition: 0.3s ease;
+  }
+
+  .menu a.active {
+    background-color:  #9b11db41;
+    padding: 15px 34px;
+  } 
+}
