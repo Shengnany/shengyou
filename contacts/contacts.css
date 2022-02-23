@@ -1,6 +1,4 @@
-a {
-  font-size: 60px;
-}
+
 
 h1 {
   font-size: 100px;
@@ -12,3 +10,6 @@ h1 {
   justify-content: center;
 }
 
+.content a {
+  font-size: 60px;
+}
