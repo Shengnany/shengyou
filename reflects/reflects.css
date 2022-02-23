@@ -2,15 +2,9 @@
     margin: 200px;
   }
 
-.wrapper{
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  gap: 3px;
-  text-align: center;
-  margin: 300px;
-  height: 700px;
-}
+  .wrapper{
+    margin: 300px;
+  }
 
 
   .card-container {
@@ -43,7 +37,13 @@
 
 
 
-
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 3px;
+    text-align: center;
+}
   .wrapper .header {
     grid-column: 1/11;
     grid-row: 1;
