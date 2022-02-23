@@ -22,7 +22,7 @@
 }
 
 .logo {
-  font-size: 62px;
+  font-size: 50px;
 }
 
 .menu {
@@ -58,10 +58,8 @@ input[type="checkbox"] {
   font-size: 10px;
 }
 
-
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 1080px) {
-
   .menu {
     display: none;
     position: fixed;
@@ -80,9 +78,9 @@ input[type="checkbox"] {
     display: block;
   }
 
-  .hamburger{
+  .hamburger {
     display: block;
-    font-size: 80px;
+    font-size: 50px;
     margin-right: 20px;
   }
 
@@ -93,14 +91,13 @@ input[type="checkbox"] {
     border-radius: 17px;
   }
 
-
- .menu li a:hover {
+  .menu li a:hover {
     background-color: rgba(122, 15, 113, 0.466);
     transition: 0.3s ease;
   }
 
   .menu a.active {
-    background-color:  #9b11db41;
+    background-color: #9b11db41;
     padding: 15px 34px;
-  } 
+  }
 }
